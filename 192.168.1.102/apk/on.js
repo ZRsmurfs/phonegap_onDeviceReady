@@ -3,4 +3,5 @@ function onDeviceReady() {
 	young_log("ready1:" + ready);
 	ready = true;
 	young_log("ready2:" + ready);
+	young_log("remote running.");
 }
