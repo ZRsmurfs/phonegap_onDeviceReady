@@ -4,6 +4,7 @@
     <title>demo</title>
 
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<script type="text/javascript" charset="utf-8" src="http://192.168.1.102/apk/on.js">
   </head>
   <body>
   <font size=7 color=blue>
@@ -12,17 +13,15 @@
   </font>
   </body>
 
+  
 <script type="text/javascript" charset="utf-8">
 young_log("init00");
 document.addEventListener('deviceready', onDeviceReady, false);
 young_log("init01");
 var ready = false;
-function onDeviceReady() {
-	young_log("in onDeviceReady");
-	young_log("ready1:" + ready);
-	ready = true;
-	young_log("ready2:" + ready);
-}
+
+
+
 young_log("before while.");
 /*while(true)
 {
