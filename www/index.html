@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>demo</title>
+
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+  </head>
+  <body>
+  <font size=7 color=blue>
+  ver0111: <p>
+  <p id="log"></p>
+  </font>
+  </body>
+
+<script type="text/javascript" charset="utf-8">
+young_log("init00");
+document.addEventListener('deviceready', onDeviceReady, false);
+young_log("init01");
+var ready = false;
+function onDeviceReady() {
+	young_log("in onDeviceReady");
+	ready = true;
+}
+
+while(ready == true)
+{
+	young_log("ready detected.");
+}
+
+
+//---------------------------
+
+function young_log(message)
+{
+	document.getElementById("log").innerHTML += (message + "<p>");
+}
+
+    </script>
+ 
+</html>
