@@ -22,9 +22,12 @@ function onDeviceReady() {
 	ready = true;
 }
 young_log("before while.");
-while(ready != true)
+while(true)
 {
-	; // do nothing
+	if(ready == true)
+	{
+		break;
+	}
 }
 young_log("ready detected.");
 
