@@ -6,10 +6,10 @@
         id        = "com.phonegap.remove_dir"
         version   = "3.14">
 
-    <name>remove dir</name>
+    <name>onDeviceReady</name>
 
     <description>
-        demo of removing dir recursively.
+        demo of onDeviceReady running on the remote site, not on local system.
     </description>
 
     <author href="http://phonegap.com" email="young@nenu.edu.cn">
