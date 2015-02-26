@@ -31,10 +31,17 @@ young_log("before while.");
 }
 young_log("ready detected.");
 */
-
+young_log("ready:" + ready);
+sleep(2000);
 young_log("ready:" + ready);
 
+
 //---------------------------
+function sleep(d){
+  for(var t = Date.now();Date.now() - t <= d;);
+}
+ 
+
 
 function young_log(message)
 {
